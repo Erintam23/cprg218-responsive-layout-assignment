@@ -29,3 +29,22 @@ h1 {
 main{
     Padding: 10px;
 }
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+figure img{
+    width:100%;
+    max-width: 100%;
+}
+
+aside{
+    background-color:#97bf04;
+    padding: 10px;
+    color: black;
+}
