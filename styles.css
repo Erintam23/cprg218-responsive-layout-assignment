@@ -45,6 +45,14 @@ figure img{
 
 aside{
     background-color:#97bf04;
-    padding: 10px;
     color: black;
+    padding: 10px;
 }
+
+footer {
+    background-color: #d9043d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
