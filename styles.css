@@ -37,7 +37,6 @@ main{
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-
 }
 
 figure{
@@ -55,7 +54,7 @@ aside{
     background-color:#97bf04;
     color: black;
     padding:20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -70,6 +69,7 @@ footer {
 /*Tablet view less than 1000px wide*/
 @media screen and (min-width:768px){
     .header-container{
+        display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 10px;
@@ -83,8 +83,8 @@ footer {
     }
 
     figure img{
-     max-width: 300px;
-    }
+        max-width: 300px;
+       }
 
     figcaption{
      flex: 1;
@@ -95,18 +95,27 @@ footer {
     aside{
         width: 100%;
     }
+
+    footer{
+        margin-bottom: 20px;
+    }
 }
 
 /*Desktop layout 1000px and above*/
 @media screen and (min-width: 1000px) {
-#container{
-    flex-direction: row;
+    #container{
+        display: flex;
+        flex-direction:row;
+        max-width: none;
+
 }
 
-aside{
-    height: auto;
-    max-width: 30%;
+    aside{
+        margin-top: 20px;
+        
 }
-}
-    
 
+    footer{
+     margin-bottom: 10px;
+}
+}
