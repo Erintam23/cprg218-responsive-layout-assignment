@@ -1,4 +1,3 @@
-/*General body*/
 *{
     box-sizing: border-box;
 }
@@ -9,15 +8,18 @@ body{
     padding: 0;
 }
 
-img{
-    max-width: 100%;
+header img{
+    max-width: 200px;
     height: auto;
 }
 
 /*header*/
 .header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #120323;
-    color:white;
+    color:#97bf04;
     text-align: center;
     padding: 10px;
 }
@@ -27,7 +29,7 @@ h1 {
   }
 
 main{
-    Padding: 10px;
+    Padding: 1.5em;
 }
 
 #container {
@@ -35,18 +37,25 @@ main{
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    padding: 20px;
+
 }
 
+figure{
+    display: flex;
+    flex-direction: column;
+
+}
 figure img{
     width:100%;
     max-width: 100%;
+    border: 2px solid #d9043d;
 }
 
 aside{
     background-color:#97bf04;
     color: black;
-    padding: 10px;
+    padding:20px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -54,5 +63,50 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
+    width:100%;
 }
+
+
+/*Tablet view less than 1000px wide*/
+@media screen and (min-width:768px){
+    .header-container{
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+    figure{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    figure img{
+     max-width: 300px;
+    }
+
+    figcaption{
+     flex: 1;
+     text-align: left;
+     padding: 10px;
+    }
+
+    aside{
+        width: 100%;
+    }
+}
+
+/*Desktop layout 1000px and above*/
+@media screen and (min-width: 1000px) {
+#container{
+    flex-direction: row;
+}
+
+aside{
+    height: auto;
+    max-width: 30%;
+}
+}
+    
 
