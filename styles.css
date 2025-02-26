@@ -47,7 +47,7 @@ figure{
 figure img{
     width:100%;
     max-width: 100%;
-    border: 2px solid #d9043d;
+    border: 3px solid #d9043d;
 }
 
 aside{
@@ -60,7 +60,7 @@ aside{
 footer {
     background-color: #d9043d;
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     width:100%;
 }
